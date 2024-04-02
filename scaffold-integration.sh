@@ -20,4 +20,8 @@ region=southamerica-east1
 
 integrationcli prefs set -p $project -r $region -t $token
 
-integrationcli integrations scaffold -n gemini-sample -s 1 -e dev --cloud-build --cloud-deploy
+# Export with: 
+# integrationcli integrations scaffold -n gemini-sample -s 1 -e dev --cloud-build --cloud-deploy
+
+# Deploy with:
+# integrationcli integrations apply -f . -e dev --wait=true
