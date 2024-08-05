@@ -1,5 +1,5 @@
 {
-	"snapshotNumber": "1",
+	"snapshotNumber": "3",
 	"triggerConfigs": [
 		{
 			"label": "API Trigger",
@@ -13,6 +13,20 @@
 			],
 			"properties": {
 				"Trigger name": "gemini-request_API_1"
+			}
+		},
+		{
+			"label": "Private Trigger",
+			"triggerType": "PRIVATE_TRIGGER",
+			"triggerNumber": "4",
+			"triggerId": "private_trigger/gemini-text-only_Private_1",
+			"startTasks": [
+				{
+					"taskId": "2"
+				}
+			],
+			"properties": {
+				"Trigger name": "gemini-text-only_Private_1"
 			}
 		}
 	],
@@ -128,7 +142,7 @@
 					"taskId": "1"
 				}
 			],
-			"taskExecutionStrategy": "WHEN_ALL_SUCCEED",
+			"taskExecutionStrategy": "WHEN_ANY_SUCCEED",
 			"externalTaskType": "NORMAL_TASK"
 		},
 		{
@@ -213,6 +227,9 @@
 					"stringValue": "us-central1"
 				},
 				"displayName": "`CONFIG_vertex-region`"
+			},
+			"value": {
+				"stringValue": "us-central1"
 			}
 		},
 		{
@@ -223,6 +240,9 @@
 					"stringValue": "projects/cabral-app-integration/locations/southamerica-east1/connections/vertex-connection"
 				},
 				"displayName": "`CONFIG_vertex-ai-connection-string`"
+			},
+			"value": {
+				"stringValue": "projects/cabral-app-integration/locations/southamerica-east1/connections/vertex-connection"
 			}
 		},
 		{
@@ -233,6 +253,9 @@
 					"stringValue": "cabral-app-integration"
 				},
 				"displayName": "`CONFIG_vertex-project`"
+			},
+			"value": {
+				"stringValue": "cabral-app-integration"
 			}
 		}
 	],
