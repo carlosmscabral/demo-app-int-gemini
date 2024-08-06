@@ -1,5 +1,5 @@
 {
-	"snapshotNumber": "3",
+	"snapshotNumber": "5",
 	"triggerConfigs": [
 		{
 			"label": "API Trigger",
@@ -48,7 +48,7 @@
 				"connectionName": {
 					"key": "connectionName",
 					"value": {
-						"stringValue": "projects/cabral-app-integration/locations/southamerica-east1/connections/vertex-connection"
+						"stringValue": "$`CONFIG_vertex-ai-connection-string`$"
 					}
 				},
 				"connectionVersion": {
@@ -67,6 +67,12 @@
 					"key": "connectorOutputPayload",
 					"value": {
 						"stringValue": "$`Task_1_connectorOutputPayload`$"
+					}
+				},
+				"dynamicAuthConfig": {
+					"key": "dynamicAuthConfig",
+					"value": {
+						"jsonValue": "null"
 					}
 				},
 				"entityId": {
@@ -113,6 +119,12 @@
 					"key": "operation",
 					"value": {
 						"stringValue": "EXECUTE_ACTION"
+					}
+				},
+				"timeout": {
+					"key": "timeout",
+					"value": {
+						"intValue": "0"
 					}
 				}
 			},
@@ -221,23 +233,10 @@
 	"integrationConfigParameters": [
 		{
 			"parameter": {
-				"key": "`CONFIG_vertex-region`",
-				"dataType": "STRING_VALUE",
-				"defaultValue": {
-					"stringValue": "us-central1"
-				},
-				"displayName": "`CONFIG_vertex-region`"
-			},
-			"value": {
-				"stringValue": "us-central1"
-			}
-		},
-		{
-			"parameter": {
 				"key": "`CONFIG_vertex-ai-connection-string`",
 				"dataType": "STRING_VALUE",
 				"defaultValue": {
-					"stringValue": "projects/cabral-app-integration/locations/southamerica-east1/connections/vertex-connection"
+					"stringValue": ""
 				},
 				"displayName": "`CONFIG_vertex-ai-connection-string`"
 			},
@@ -250,12 +249,25 @@
 				"key": "`CONFIG_vertex-project`",
 				"dataType": "STRING_VALUE",
 				"defaultValue": {
-					"stringValue": "cabral-app-integration"
+					"stringValue": ""
 				},
 				"displayName": "`CONFIG_vertex-project`"
 			},
 			"value": {
 				"stringValue": "cabral-app-integration"
+			}
+		},
+		{
+			"parameter": {
+				"key": "`CONFIG_vertex-region`",
+				"dataType": "STRING_VALUE",
+				"defaultValue": {
+					"stringValue": ""
+				},
+				"displayName": "`CONFIG_vertex-region`"
+			},
+			"value": {
+				"stringValue": "us-central1"
 			}
 		}
 	],

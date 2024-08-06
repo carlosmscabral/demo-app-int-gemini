@@ -19,6 +19,7 @@
 			]
 		}
 	],
+	"suspended": true,
 	"logConfig": {
 		"enabled": true
 	},

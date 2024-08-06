@@ -14,14 +14,14 @@
 # limitations under the License.
 
 
-token=$(gcloud auth print-access-token)
-project=cabral-app-integration
-region=southamerica-east1
+# token=$(gcloud auth print-access-token)
+# project=cabral-app-integration
+# region=southamerica-east1
 
-integrationcli prefs set -p $project -r $region -t $token
+# integrationcli prefs set -p $project -r $region -t $token
 
 # Export with: 
-# integrationcli integrations scaffold -n gemini-multimodal -s 2 -e dev --cloud-build --cloud-deploy
+# integrationcli integrations scaffold -n gemini-multimodal -s 4 -e dev --cloud-build --cloud-deploy
 
 # Deploy with:
 # integrationcli integrations apply -f . -e dev --wait=true

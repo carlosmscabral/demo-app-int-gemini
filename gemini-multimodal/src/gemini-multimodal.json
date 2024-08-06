@@ -1,5 +1,5 @@
 {
-	"snapshotNumber": "2",
+	"snapshotNumber": "4",
 	"triggerConfigs": [
 		{
 			"label": "Private Trigger",
@@ -54,7 +54,7 @@
 				"connectionVersion": {
 					"key": "connectionVersion",
 					"value": {
-						"stringValue": "projects/alianca-ops-ped/locations/global/providers/gcp/connectors/vertexai/versions/1"
+						"stringValue": "projects/cabral-app-integration/locations/global/providers/gcp/connectors/vertexai/versions/1"
 					}
 				},
 				"connectorInputPayload": {
