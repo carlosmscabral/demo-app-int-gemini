@@ -22,6 +22,7 @@
 
 # Export with: 
 # integrationcli integrations scaffold -n gemini-multimodal -s 4 -e dev --cloud-build --cloud-deploy
+# integrationcli integrations scaffold -n gemini-multimodal -s 4 -e dev --cloud-build --cloud-deploy --skip-connectors
 
-# Deploy with:
+# Deploy with: (change overrides for connection name to use the config variable name)
 # integrationcli integrations apply -f . -e dev --wait=true

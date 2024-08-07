@@ -21,7 +21,8 @@
 # integrationcli prefs set -p $project -r $region -t $token
 
 # Export with: 
-# integrationcli integrations scaffold -n gemini-text-only -s 5 -e dev --cloud-build --cloud-deploy
+# integrationcli integrations scaffold -n gemini-text-only -s 5 -e dev --cloud-build --cloud-deploy 
+# integrationcli integrations scaffold -n gemini-text-only -s 5 -e dev --cloud-build --cloud-deploy --skip-connectors
 
 # Deploy with:
 # integrationcli integrations apply -f . -e dev --wait=true
